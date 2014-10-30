@@ -18,7 +18,8 @@ public class DataBaseManager {
     public static final String CN_CELULAR = "celular";
     public static final String CN_COMUNA = "comuna";
     public static final String CN_CLAVE = "clave";
-
+    public static final String CN_PROFESOR = "profesor";
+    public static final String CN_ALUMNO = "alumno";
     public static final String CREATE_TABLE = "create table " +TABLE_NAME+ " ("
             + CN_ID + " integer primary key autoincrement,"
             + CN_NAME + " text not null,"
@@ -26,6 +27,8 @@ public class DataBaseManager {
             + CN_MAIL + " text,"
             + CN_CELULAR + " text,"
             + CN_COMUNA + " text,"
+            + CN_PROFESOR + " text,"
+            + CN_ALUMNO + " text,"
             + CN_CLAVE + " text);";
 
     private MyProfeDbHelper helper;
@@ -49,9 +52,9 @@ public class DataBaseManager {
         db.insert(TABLE_NAME, null, generarContentValues(nombre, telefono));
     }
 
-    public void insertar2(String nombre, String apellido, String mail, String celular, String comuna, String clave) {
+    public void insertar2(String nombre, String apellido, String mail, String celular, String comuna,String profesor,String alumno,String clave) {
         //INSERT INTO contactos   VALUES (null,'paco',9999)
-        db.execSQL("insert into " + TABLE_NAME + " values (null,'" + nombre + "','" + apellido + "','" + mail + "','" + celular + "','" + comuna + "','" + clave + "')");
+        db.execSQL("insert into " + TABLE_NAME + " values (null,'" + nombre + "','" + apellido + "','" + mail + "','" + celular + "','" + comuna + "'," + profesor + "," + alumno + ",'" + clave + "')");
     }
 
     public void eliminar(String nombre) {
@@ -70,6 +73,6 @@ public class DataBaseManager {
 
     public Cursor cargarCursorContactos() {
         String[] columnas = new String[]{CN_ID, CN_NAME,CN_APELLIDO};
-        return db.query(TABLE_NAME, columnas, null, null, null, null, null);
+        return db.query(TABLE_NAME, columnas, CN_PROFESOR+"=1", null, null, null, null);
     }
 }

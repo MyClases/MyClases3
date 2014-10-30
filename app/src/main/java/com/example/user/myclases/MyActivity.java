@@ -6,6 +6,8 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import com.example.user.myclases.data.DataBaseManager;
@@ -20,6 +22,7 @@ public class MyActivity extends Activity implements View.OnClickListener {
     private TextView celular;
     private TextView comuna;
     private TextView clave;
+    private CheckBox profesor,alumno;
 
 
     @Override
@@ -35,6 +38,8 @@ public class MyActivity extends Activity implements View.OnClickListener {
         celular = (TextView) findViewById(R.id.editTextCelular);
         comuna = (TextView) findViewById(R.id.editTextComuna);
         clave = (TextView) findViewById(R.id.editTextClave);
+        profesor=(CheckBox) findViewById(R.id.checkBox2);
+        alumno=(CheckBox) findViewById(R.id.checkBox);
 
 
 
@@ -51,18 +56,30 @@ public class MyActivity extends Activity implements View.OnClickListener {
             String cuarto =celular.getText().toString();
             String quinto =comuna.getText().toString();
             String sexto =clave.getText().toString();
+            String uno ="1";
+            String cero ="0";
+            if(profesor.isChecked()==true){if(alumno.isChecked()==true){
             manager = new DataBaseManager(this);
-            manager.insertar2(primero,segundo,tercero,cuarto,quinto,sexto);
+            manager.insertar2(primero,segundo,tercero,cuarto,quinto,uno,uno,sexto);
+                }
+            else{
+                manager = new DataBaseManager(this);
+                manager.insertar2(primero,segundo,tercero,cuarto,quinto,uno,cero,sexto);}
+            }
+            else{ manager = new DataBaseManager(this);
+                manager.insertar2(primero,segundo,tercero,cuarto,quinto,cero,uno,sexto);}
             Intent a = new Intent(this, Menus.class);
-            startActivity(a);
+            startActivity(a);}
         if (view.getId() == R.id.ButtonResetear) {
 
-
-
+            nombre1.setText("");
+            apellido.setText("");
+            mail.setText("");
+            celular.setText("");
+            comuna.setText("");
+            clave.setText("");
         }
 
 
 
-        }
-    }
-}
+}}
