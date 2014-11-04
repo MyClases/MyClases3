@@ -164,7 +164,7 @@ public class DataBaseManager {
         }
 
 
-        return db.rawQuery("SELECT _id,nombre,apellido FROM usuarios WHERE profesor = 1", null);
+        return null;
         }
 
     public Cursor contraseña(String contraseña){

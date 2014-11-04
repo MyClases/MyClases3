@@ -57,8 +57,8 @@
       <file leaf-file-name="DataBaseManager.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myclases/data/DataBaseManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="385" max-vertical-offset="2790">
-              <caret line="156" column="14" selection-start-line="156" selection-start-column="14" selection-end-line="156" selection-end-column="14" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="429" max-vertical-offset="2790">
+              <caret line="63" column="59" selection-start-line="63" selection-start-column="59" selection-end-line="63" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -97,7 +97,7 @@
       <file leaf-file-name="Buscar.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myclases/Buscar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="132" max-vertical-offset="870">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="870">
               <caret line="26" column="47" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -111,6 +111,19 @@
           <provider editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="1095">
               <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_precio.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_precio.xml">
+          <provider editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1110">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -147,7 +160,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_my_perfil.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="activity_my_perfil.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_my_perfil.xml">
           <provider editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="810">
@@ -162,37 +175,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_filtros.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_filtros.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.444445" vertical-offset="0" max-vertical-offset="1095">
-              <caret line="35" column="8" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myclases/MyActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="804" max-vertical-offset="1380">
-              <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ListaProfe.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myclases/ListaProfe.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="870">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyActivity.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myclases/MyActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.2665615" vertical-offset="746" max-vertical-offset="1380">
+              <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -911,14 +911,14 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/user/myclases/ListaAlumno.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/user/myclases/Buscar.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_buscar.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/user/myclases/data/DataBaseManager.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_my_perfil.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/user/myclases/data/DataBaseManager.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="190" />
-    <option name="y" value="76" />
+    <option name="x" value="207" />
+    <option name="y" value="81" />
     <option name="width" value="1276" />
     <option name="height" value="778" />
   </component>
@@ -1412,7 +1412,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="190" y="76" width="1276" height="778" extended-state="0" />
+    <frame x="207" y="81" width="1276" height="778" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1428,14 +1428,14 @@
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32961783" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959481" sideWeight="0.5011876" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32779455" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.45468277" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45468277" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32930514" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24959481" sideWeight="0.49881235" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24959481" sideWeight="0.49881235" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32779455" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1725,17 +1725,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_precio.xml">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="446" max-vertical-offset="1080">
@@ -1790,7 +1779,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="1020">
           <caret line="37" column="30" selection-start-line="36" selection-start-column="16" selection-end-line="37" selection-end-column="30" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1832,79 +1821,6 @@
       </provider>
       <provider editor-type-id="android-designer">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myclases/MyActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="369" max-vertical-offset="1380">
-          <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myclases/ListaProfe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="870">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_lista_alumno.xml">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <element signature="e#229#264#0" expanded="true" />
-            <element signature="e#290#325#0" expanded="true" />
-            <element signature="e#349#382#0" expanded="true" />
-            <element signature="e#409#442#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myclases/ListaAlumno.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="117" max-vertical-offset="840">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myclases/Buscar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="132" max-vertical-offset="870">
-          <caret line="26" column="47" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_buscar.xml">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="1080">
-          <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myclases/data/DataBaseManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="385" max-vertical-offset="2790">
-          <caret line="156" column="14" selection-start-line="156" selection-start-column="14" selection-end-line="156" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_filtros.xml">
@@ -1955,6 +1871,90 @@
       </provider>
       <provider selected="true" editor-type-id="android-designer">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myclases/data/DataBaseManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="429" max-vertical-offset="2790">
+          <caret line="63" column="59" selection-start-line="63" selection-start-column="59" selection-end-line="63" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_buscar.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="1080">
+          <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_precio.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_lista_alumno.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="e#229#264#0" expanded="true" />
+            <element signature="e#290#325#0" expanded="true" />
+            <element signature="e#349#382#0" expanded="true" />
+            <element signature="e#409#442#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myclases/Buscar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="132" max-vertical-offset="870">
+          <caret line="26" column="47" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myclases/ListaAlumno.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="117" max-vertical-offset="840">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myclases/ListaProfe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="870">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myclases/MyActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2665615" vertical-offset="746" max-vertical-offset="1380">
+          <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>
