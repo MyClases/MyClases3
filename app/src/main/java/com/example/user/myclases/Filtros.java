@@ -6,48 +6,38 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-
-import android.widget.Spinner;
+import android.widget.Button;
 import android.widget.TextView;
 
 
-public class Filtros extends Activity {
-
+public class Filtros extends Activity implements View.OnClickListener{
+    private TextView a,b,c;
+    private Button d;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_filtros);
-        Spinner boton = (Spinner) findViewById(R.id.lista1);
+        a=(TextView)findViewById(R.id.editTextPrecio);
+        b=(TextView)findViewById(R.id.EditTextAsignatura);
+        c=(TextView)findViewById(R.id.EditTextComuna1);
+        d=(Button) findViewById(R.id.filtrarbt);
+        d.setOnClickListener(this);
 
-        boton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Filtros.this,
-                        ListaProfe.class);
-                startActivity(intent);
-            }
-        });
-        Spinner boto = (Spinner) findViewById(R.id.lista2);
-
-        boto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Filtros.this,
-                        ListaProfe.class);
-                startActivity(intent);
-            }
-        });
-        Spinner bot = (Spinner) findViewById(R.id.lista3);
-
-        bot.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Filtros.this,
-                        ListaProfe.class);
-                startActivity(intent);
-            }
-        });
     }
+    @Override
+    public void onClick(View view) {
+
+        if (view.getId()== R.id.filtrarbt) {
+            Intent i=new Intent(this,ListaProfe.class) ;
+            i.putExtra("asignatura", b.getText().toString());
+            i.putExtra("precio", a.getText().toString());
+            i.putExtra("comuna", c.getText().toString());
+            startActivity(i);
+
+
+
+
+        }}
 
 
     @Override
@@ -68,4 +58,5 @@ public class Filtros extends Activity {
         }
         return super.onOptionsItemSelected(item);
     }
+
 }

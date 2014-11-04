@@ -1,9 +1,12 @@
 package com.example.user.myclases;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 
 public class MyPerfil extends Activity {
@@ -12,6 +15,22 @@ public class MyPerfil extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_perfil);
+        Button Registrarse = (Button) findViewById(R.id.contraseña);
+
+        Registrarse.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MyPerfil.this,
+                        asignatura.class);
+                startActivity(intent);}});
+        Button Registra = (Button) findViewById(R.id.Precio);
+
+        Registra.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MyPerfil.this,
+                        precio.class);
+                startActivity(intent);}});
     }
 
 

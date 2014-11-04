@@ -96,6 +96,9 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor>{
         entrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+
+
                 Intent intent = new Intent(LoginActivity.this,
                         Menus.class);
                 startActivity(intent);}});

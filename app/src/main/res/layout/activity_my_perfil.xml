@@ -32,7 +32,7 @@
         android:layout_width="fill_parent"
         android:layout_height="80dp"
         android:text="@string/Declarar_Materia"
-        android:id="@+id/Notificacionesbutton"
+        android:id="@+id/contraseña"
         android:layout_below="@+id/Buscarbutton"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
@@ -40,9 +40,9 @@
     <Button
         android:layout_width="fill_parent"
         android:layout_height="80dp"
-        android:text="@string/Cambiar_Contraseña"
-        android:id="@+id/Perfilbutton"
-        android:layout_below="@+id/Notificacionesbutton"
+        android:text="Fijar Precio"
+        android:id="@+id/Precio"
+        android:layout_below="@+id/contraseña"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 </RelativeLayout>

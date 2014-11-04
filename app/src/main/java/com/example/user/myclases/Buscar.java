@@ -15,11 +15,16 @@ public class Buscar extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_buscar);
-        Button boton = (Button) findViewById(R.id.Notificacionesbutton);
+        Button boton = (Button) findViewById(R.id.contraseña);
 
     }
     public void pasar (View view) {
-        Intent i = new Intent(this, ListaProfe.class);
+        Intent i = new Intent(this, Filtros.class);
+        startActivity(i);
+
+    }
+    public void pasar1 (View view) {
+        Intent i = new Intent(this, ListaAlumno.class);
         startActivity(i);
 
     }

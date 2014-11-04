@@ -64,6 +64,18 @@
             android:name=".Filtros"
             android:label="@string/title_activity_filtros" >
         </activity>
+        <activity
+            android:name=".asignatura"
+            android:label="@string/title_activity_asignatura" >
+        </activity>
+        <activity
+            android:name=".precio"
+            android:label="@string/title_activity_precio" >
+        </activity>
+        <activity
+            android:name=".ListaAlumno"
+            android:label="@string/title_activity_lista_alumno" >
+        </activity>
     </application>
 
     <!-- To auto-complete the email text field in the login form with the user's emails -->

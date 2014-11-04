@@ -24,7 +24,7 @@ public class Menus extends Activity {
                 Intent intent = new Intent(Menus.this,
                         Buscar.class);
                 startActivity(intent);}});
-        Button Registrar = (Button) findViewById(R.id.Perfilbutton);
+        Button Registrar = (Button) findViewById(R.id.Precio);
         Registrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -38,7 +38,7 @@ public class Menus extends Activity {
                 Intent intent = new Intent(Menus.this,
                         Agendatuclase.class);
                 startActivity(intent);}});
-        Button Regist = (Button) findViewById(R.id.Notificacionesbutton);
+        Button Regist = (Button) findViewById(R.id.contraseña);
         Regist.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

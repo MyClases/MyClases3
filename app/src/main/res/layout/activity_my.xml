@@ -1,223 +1,178 @@
-
-<TableLayout android:id="@+id/TableLayout01"
-    android:layout_width="wrap_content" android:layout_height="match_parent"
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout android:id="@+id/TableLayout01"
+    android:layout_width="match_parent" android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <TableRow
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/RegistroTitle"
-            android:id="@+id/TextoRegisto"
-            android:layout_column="0" />
-    </TableRow>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/RegistroTitle"
+        android:id="@+id/TextoRegisto"
+        android:layout_row="0"
+        android:layout_column="0" />
 
-    <TableRow
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        >
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Quieres_ser_alumno"
-            android:id="@+id/pregunta1"
-            android:layout_column="0" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Quieres_ser_alumno"
+        android:id="@+id/pregunta1"
+        android:layout_row="1"
+        android:layout_column="0" />
 
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Si"
-            android:id="@+id/checkBox"
-            android:layout_column="4"
-            android:checked="false" />
-    </TableRow>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Si"
+        android:id="@+id/checkBox"
+        android:layout_row="1"
+        android:layout_column="1"
+        android:checked="false" />
 
-    <TableRow
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Quieres_ser_profesor"
-            android:id="@+id/pregunta2"
-            android:layout_column="0" />
 
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Si"
-            android:id="@+id/checkBox2"
-            android:layout_column="4"
-            android:checked="false" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Quieres_ser_profesor"
+        android:id="@+id/pregunta2"
+        android:layout_row="2"
+        android:layout_column="0" />
 
-    </TableRow>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Si"
+        android:id="@+id/checkBox2"
+        android:layout_row="2"
+        android:layout_column="1"
+        android:checked="false" />
 
-    <TableRow android:id="@+id/TableRow01">
-        <TextView android:id="@+id/TextoNombre" android:text="@string/Nombre"
-            android:width="100dp" />
-        <EditText android:id="@+id/EditTextNombre" android:width="220dp"
-            android:layout_column="4"
-            android:inputType="text" />
-    </TableRow>
-    <TableRow android:id="@+id/TableRow02">
-        <TextView android:id="@+id/TextoApellido" android:text="@string/Apellido" />
-        <EditText android:id="@+id/EditTextApellido"
-            android:layout_column="4"
-            android:inputType="text" />
-    </TableRow>
+    <TextView android:id="@+id/TextoNombre"
+        android:text="@string/Nombre"
+        android:width="100dp"
+        android:layout_row="3"
+        android:layout_column="0"/>
+    <EditText android:id="@+id/EditTextNombre"
+        android:inputType="text"
+        android:width="200dp"
+        android:layout_row="3"
+        android:layout_column="1" />
 
-    <TableRow
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+    <TextView android:id="@+id/TextoApellido"
+        android:text="@string/Apellido"
+        android:inputType="text"
+        android:layout_row="4"
+        android:layout_column="0"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Email"
-            android:id="@+id/textoEmail"
-            android:layout_column="0" />
+    <EditText android:id="@+id/EditTextApellido"
+        android:layout_row="4"
+        android:layout_column="1"
+        android:inputType="text"
+        android:width="200dp"
+        />
 
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="textEmailAddress"
-            android:ems="10"
-            android:id="@+id/EditTextEmail"
-            android:layout_column="4" />
 
-    </TableRow>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Email"
+        android:id="@+id/textoEmail"
+        android:layout_row="5"
+        android:layout_column="0" />
 
-    <TableRow
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:width="200dp"
+        android:id="@+id/EditTextEmail"
+        android:layout_row="5"
+        android:layout_column="1" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Celular"
-            android:id="@+id/textoCelular"
-            android:layout_column="0" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Celular"
+        android:id="@+id/textoCelular"
+        android:layout_row="6"
+        android:layout_column="0"  />
 
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/editTextCelular"
-            android:layout_column="4"
-            android:inputType="number" />
-    </TableRow>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextCelular"
+        android:width="200dp"
+        android:layout_row="6"
+        android:layout_column="1"
+        android:inputType="number" />
 
-    <TableRow
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Comuna"
+        android:id="@+id/textoComuna"
+        android:layout_row="7"
+        android:layout_column="0" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Comuna"
-            android:id="@+id/textoComuna"
-            android:layout_column="0" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextComuna"
+        android:width="200dp"
+        android:layout_row="7"
+        android:layout_column="1"
+        android:inputType="text" />
 
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/editTextComuna"
-            android:layout_column="4"
-            android:inputType="text" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Clave"
+        android:id="@+id/textoClave"
+        android:layout_row="8"
+        android:layout_column="0" />
 
-    </TableRow>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:id="@+id/editTextClave"
+        android:width="200dp"
+        android:layout_row="8"
+        android:layout_column="1" />
 
-    <TableRow
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Fecha"
+        android:id="@+id/textoFecha"
+        android:layout_row="9"
+        android:layout_column="0" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Clave"
-            android:id="@+id/textoClave"
-            android:layout_column="0" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:width="200dp"
+        android:id="@+id/editTextFecha"
+        android:layout_row="9"
+        android:layout_column="1" />
 
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="textPassword"
-            android:ems="10"
-            android:id="@+id/editTextClave"
-            android:layout_column="4" />
 
-    </TableRow>
+    <Button android:id="@+id/ButtonEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="10"
+        android:layout_column="1"
+        android:text="@string/Enviar" />
 
-    <TableRow
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        >
+    <Button android:id="@+id/ButtonResetear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Resetear"
+        android:width="100dp"
+        android:layout_row="11"
+        android:layout_column="1" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Género"
-            android:id="@+id/textoGénero"
-            android:layout_column="0" />
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Masculino"
-            android:id="@+id/radioMasculino"
-            android:layout_column="4"
-            android:checked="false" />
-
-    </TableRow>
-
-    <TableRow
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Femenino"
-            android:id="@+id/radioFemenino"
-            android:layout_column="4"
-            android:checked="false" />
-
-    </TableRow>
-
-    <TableRow
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Fecha"
-            android:id="@+id/textoFecha"
-            android:layout_column="0" />
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="date"
-            android:ems="10"
-            android:id="@+id/editTextFecha"
-            android:layout_column="4" />
-
-    </TableRow>
-
-    <TableRow android:id="@+id/TableRow03">
-        <Button android:id="@+id/ButtonEnviar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:text="@string/Enviar" />
-        <Button android:id="@+id/ButtonResetear"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:text="@string/Resetear"
-            android:width="100dp"
-            android:layout_column="4" />
-    </TableRow>
-
-</TableLayout>
+</GridLayout>

@@ -7,14 +7,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
-import android.widget.EditText;
 import android.widget.TextView;
 
 import com.example.user.myclases.data.DataBaseManager;
 
 public class MyActivity extends Activity implements View.OnClickListener {
     private SQLiteDatabase db;
-    private Button boton;
+    private Button boton,boto;
     private Button btn;
     private TextView nombre;
     private TextView apellido;
@@ -40,6 +39,8 @@ public class MyActivity extends Activity implements View.OnClickListener {
         clave = (TextView) findViewById(R.id.editTextClave);
         profesor=(CheckBox) findViewById(R.id.checkBox2);
         alumno=(CheckBox) findViewById(R.id.checkBox);
+        boto = (Button) findViewById(R.id.ButtonEnviar);
+        boto.setOnClickListener(this);
 
 
 
@@ -72,7 +73,7 @@ public class MyActivity extends Activity implements View.OnClickListener {
             startActivity(a);}
         if (view.getId() == R.id.ButtonResetear) {
 
-            nombre1.setText("");
+            nombre.setText("");
             apellido.setText("");
             mail.setText("");
             celular.setText("");

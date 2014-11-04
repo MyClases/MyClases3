@@ -57,5 +57,11 @@
     <string name="title_activity_menus">Menus</string>
     <string name="title_activity_aa">aa</string>
     <string name="title_activity_filtros">Filtros</string>
+    <string name="title_activity_asignatura">asignatura</string>
+    <string name="queclases">Que clases doy</string>
+    <string name="fisica">Física</string>
+    <string name="fisicaa">Física</string>
+    <string name="title_activity_precio">precio</string>
+    <string name="title_activity_lista_alumno">ListaAlumno</string>
 
 </resources>
