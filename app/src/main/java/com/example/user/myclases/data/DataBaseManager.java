@@ -159,7 +159,7 @@ public class DataBaseManager {
              }
 
             if (comuna.isEmpty()){
-                return db.rawQuery("SELECT _id,nombre,apellido FROM usuarios WHERE profesor = 1 AND precio<= '"+precio+"'", null);
+                return db.rawQuery("SELECT _id,nombre,apellido FROM usuarios WHERE profesor = 1 AND precio <= '"+precio+"'", null);
             }
         }
 
@@ -171,6 +171,14 @@ public class DataBaseManager {
         String[] columnas = new String[]{CN_NAME};
         String[] whereargs = new String[]{contraseña};
         return db.query(TABLE_NAME, columnas, CN_CLAVE+"=?" ,whereargs, null, null, null);
+    }
+    public Cursor contraseña1(String contraseña) {
+        Cursor mCursor =
+                db.rawQuery("select nombre,apellido from usuarios WHERE clave= '" + contraseña + "';", null);
+        if (mCursor != null) {
+            mCursor.moveToFirst();
+        }
+        return mCursor;
     }
     public Cursor cargarCursorContactos2() {
         String[] columnas = new String[]{CN_ID, CN_NAME,CN_APELLIDO};

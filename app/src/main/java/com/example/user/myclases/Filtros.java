@@ -6,22 +6,31 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.Spinner;
 import android.widget.TextView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class Filtros extends Activity implements View.OnClickListener{
-    private TextView a,b,c;
+    private TextView a;
     private Button d;
+    private Spinner spinner1,b,spinner2,c;
+    private List<String> lista;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_filtros);
         a=(TextView)findViewById(R.id.editTextPrecio);
-        b=(TextView)findViewById(R.id.EditTextAsignatura);
-        c=(TextView)findViewById(R.id.EditTextComuna1);
+        b=(Spinner)findViewById(R.id.spinner1);
+        c=(Spinner)findViewById(R.id.spinner2);
         d=(Button) findViewById(R.id.filtrarbt);
         d.setOnClickListener(this);
+        DatosPorDefecto();
+        DatosPorDefecto1();
 
     }
     @Override
@@ -29,15 +38,49 @@ public class Filtros extends Activity implements View.OnClickListener{
 
         if (view.getId()== R.id.filtrarbt) {
             Intent i=new Intent(this,ListaProfe.class) ;
-            i.putExtra("asignatura", b.getText().toString());
+            i.putExtra("asignatura", b.getSelectedItem().toString());
             i.putExtra("precio", a.getText().toString());
-            i.putExtra("comuna", c.getText().toString());
+            i.putExtra("comuna", c.getSelectedItem().toString());
             startActivity(i);
 
 
 
 
         }}
+    private void DatosPorDefecto() {
+        spinner1 = (Spinner) findViewById(R.id.spinner1);
+        lista = new ArrayList<String>();
+        spinner1 = (Spinner) this.findViewById(R.id.spinner1);
+        lista.add("");
+        lista.add("matematicas");
+        lista.add("fisica");
+        lista.add("ingles");
+
+        ArrayAdapter<String> adaptador = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, lista);
+        adaptador.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner1.setAdapter(adaptador);
+    }
+    private void DatosPorDefecto1() {
+        spinner2 = (Spinner) findViewById(R.id.spinner2);
+        lista = new ArrayList<String>();
+        spinner2= (Spinner) this.findViewById(R.id.spinner2);
+        lista.add("");
+        lista.add("La Reina");
+        lista.add("Las Condes");
+        lista.add("La Dehesa");
+        lista.add("Peñalolen");
+        lista.add("Providencia");
+        lista.add("Vitacura");
+        lista.add("Independencia");
+        lista.add("Santiago");
+        lista.add("Renca");
+        lista.add("La Pintana");
+        lista.add("Quinta Normal");
+        lista.add("Maipu");
+        ArrayAdapter<String> adaptador = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, lista);
+        adaptador.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner2.setAdapter(adaptador);
+    }
 
 
     @Override

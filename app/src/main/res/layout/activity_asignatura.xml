@@ -56,22 +56,4 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/ingles" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:ems="10"
-        android:id="@+id/contraseña"
-        android:layout_above="@+id/fisica"
-        android:layout_centerHorizontal="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Ingresa tu clave"
-        android:id="@+id/textView2"
-        android:layout_above="@+id/contraseña"
-        android:layout_alignRight="@+id/textView"
-        android:layout_alignEnd="@+id/textView" />
 </RelativeLayout>

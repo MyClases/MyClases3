@@ -14,33 +14,16 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Ajustes"
-        android:id="@+id/btnDisplayMessage"
-        android:singleLine="true"
-        android:layout_marginTop="81dp"
-        android:clickable="false"
-        android:focusable="true"
-        android:focusableInTouchMode="true"
-        android:longClickable="false"
-        android:width="150dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:enabled="true"
-        style="@android:style/TextAppearance.Widget.TextView" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="@string/Buscar"
         android:id="@+id/Buscarbutton"
-        android:layout_below="@+id/btnDisplayMessage"
-        android:layout_alignLeft="@+id/btnDisplayMessage"
-        android:layout_alignStart="@+id/btnDisplayMessage"
         android:width="150dp"
         android:enabled="true"
         android:focusable="true"
         android:focusableInTouchMode="true"
-        style="@android:style/TextAppearance.Widget.TextView" />
+        style="@android:style/TextAppearance.Widget.TextView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="121dp" />
 
     <Button
         android:layout_width="wrap_content"

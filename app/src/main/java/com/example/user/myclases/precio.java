@@ -1,20 +1,23 @@
 package com.example.user.myclases;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.content.Intent;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import com.example.user.myclases.data.DataBaseManager;
+import com.example.user.myclases.data.MyProfe;
 
 
 public class precio extends Activity implements View.OnClickListener{
     private Button boton;
-    private TextView nombre,contrase;
+    private TextView nombre;
+    private MyProfe globalVariable;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,24 +25,22 @@ public class precio extends Activity implements View.OnClickListener{
         boton = (Button) findViewById(R.id.buttonmenu);
         boton.setOnClickListener(this);
         nombre= (TextView) findViewById(R.id.precio);
-        contrase=(TextView)findViewById(R.id.password);
+
+        globalVariable=(MyProfe)getApplicationContext();
     }
 
     public void onClick(View view) {
 
         if (view.getId()== R.id.buttonmenu) {
             DataBaseManager manager = new DataBaseManager(this);
-            String con = contrase.getText().toString();
-            if(manager.contraseña(con).moveToFirst()){
-                manager.modificarprecio(contrase.getText().toString(),nombre.getText().toString());
+
+                manager.modificarprecio(globalVariable.getContrasena(),nombre.getText().toString());
                 Intent i=new Intent(this,Menus.class) ;
                 startActivity(i);
                 Toast toast = Toast.makeText(this, "Contraseña correcta", Toast.LENGTH_LONG);
-                toast.show();}
+                toast.show();
 
-            else{
-                Toast toast = Toast.makeText(this, "Contraseña incorrecta", Toast.LENGTH_LONG);
-                toast.show();}
+
         }}
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
