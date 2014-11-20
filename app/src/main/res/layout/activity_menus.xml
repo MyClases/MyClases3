@@ -9,7 +9,9 @@
     tools:context=".Botones"
 
     android:clickable="true"
-    style="@android:style/TextAppearance.Widget.TextView">
+    style="@android:style/TextAppearance.Widget.TextView"
+    android:focusable="true"
+    android:background="@drawable/linedpaper">
 
     <Button
         android:layout_width="wrap_content"
@@ -23,7 +25,7 @@
         style="@android:style/TextAppearance.Widget.TextView"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="121dp" />
+        android:layout_marginTop="75dp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -65,5 +67,22 @@
         android:focusable="true"
         android:focusableInTouchMode="true"
         style="@android:style/TextAppearance.Widget.TextView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Salir"
+        android:id="@+id/Salir"
+        android:width="150dp"
+        android:enabled="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        style="@android:style/TextAppearance.Widget.TextView"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/contraseña"
+        android:layout_centerHorizontal="true"
+        android:layout_alignLeft="@+id/contraseña"
+        android:layout_alignStart="@+id/contraseña"
+        />
 
 </RelativeLayout>

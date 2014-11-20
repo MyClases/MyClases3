@@ -6,7 +6,9 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.example.user.myclases.precio">
+    tools:context="com.example.user.myclases.precio"
+    android:background="@drawable/linedpaper"
+    android:focusable="true">
 
     <TextView
         android:layout_width="wrap_content"
@@ -35,15 +37,15 @@
         android:ems="10"
         android:id="@+id/precio"
         android:layout_below="@+id/textView2"
+        android:layout_marginTop="5dp"
         android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Volver al menú"
+        android:layout_below="@+id/precio"
         android:id="@+id/buttonmenu"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="133dp" />
+        android:layout_centerHorizontal="true"/>
 
 </RelativeLayout>

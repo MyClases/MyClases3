@@ -63,5 +63,6 @@
     <string name="fisicaa">Física</string>
     <string name="title_activity_precio">precio</string>
     <string name="title_activity_lista_alumno">ListaAlumno</string>
+    <string name="Salir">Salir</string>
 
 </resources>

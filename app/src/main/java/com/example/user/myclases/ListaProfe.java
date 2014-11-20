@@ -37,6 +37,12 @@ public class ListaProfe extends Activity {
 
         cursor = manager.cargarCursorContactos(a,c,p);
         adapter = new SimpleCursorAdapter(this,android.R.layout.two_line_list_item,cursor,from,to,0);
+
+        //TODO implementar ProfeCursorAdapter
+
+        //ProfeCursorAdapter cursorAdapter = new ProfeCursorAdapter(getApplicationContext(),cursor,0);
+        //lista.setAdapter(cursorAdapter);
+
         lista.setAdapter(adapter);
 
 

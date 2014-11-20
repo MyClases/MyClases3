@@ -42,11 +42,16 @@ public class Menus extends Activity {
             public void onClick(View v) {
                 Intent intent = new Intent(Menus.this,
                         Notificaciones.class);
-                startActivity(intent);}});}
+                startActivity(intent);}});
+        Button Salir = (Button) findViewById(R.id.Salir);
+        Salir.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Menus.this,
+                        LoginActivity.class);
+                startActivity(intent);}});
 
-
-
-
+    }
 
 
 
