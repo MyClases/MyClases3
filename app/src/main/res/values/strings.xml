@@ -49,7 +49,7 @@
     <string name="title_activity_perfil_profesor">Perfil</string>
     <string name="title_activity_prueba_perfil">PruebaPerfil</string>
     <string name="title_activity_my_perfil">Mi Perfil</string>
-    <string name="Declarar_Horario">Declarar Horario</string>
+    <string name="Declarar_Horario">Ser Profesor o Alumno</string>
     <string name="Declarar_Materia">Declarar Materia</string>
     <string name="Cambiar_Contraseña">Cambiar Contraseña</string>
     <string name="title_activity_menu">Menú</string>

@@ -81,7 +81,16 @@ public class DataBaseManager {
         /*bd.update(TABLA, ContentValues, Clausula Where, Argumentos Where)*/
         db.update(TABLE_NAME, valores, CN_CLAVE + "= '"+clave+"'",null);
     }
-
+    public void modificaralumno(String clave,String modificacion) {
+        if(modificacion.equals("1")){
+        ContentValues valores = new ContentValues();
+        valores.put(CN_ALUMNO, "1");
+        db.update(TABLE_NAME, valores, CN_CLAVE + "='"+clave+"'",null);}
+        else{
+        ContentValues valores = new ContentValues();
+        valores.put(CN_ALUMNO, "1");
+        db.update(TABLE_NAME, valores, CN_CLAVE + "='"+clave+"'",null);}
+    }
     public void modificaringles(String clave) {
         ContentValues valores = new ContentValues();
         valores.put(CN_INGLES, "1");
