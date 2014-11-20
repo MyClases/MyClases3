@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.user.myclases.data.DataBaseManager;
 import com.example.user.myclases.data.MyProfe;
@@ -26,7 +27,7 @@ public class MyActivity extends Activity implements View.OnClickListener {
     private TextView mail;
     private TextView celular;
     private Spinner comuna;
-    private TextView clave;
+    private TextView clave,clave1;
     private CheckBox profesor,alumno;
     private MyProfe globalVariable;
     private Spinner spinner3;
@@ -36,8 +37,7 @@ public class MyActivity extends Activity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my);
-        boton = (Button) findViewById(R.id.ButtonEnviar);
-            boton.setOnClickListener(this);
+
         btn = (Button) findViewById(R.id.ButtonResetear);
         nombre = (TextView) findViewById(R.id.EditTextNombre);
         apellido = (TextView) findViewById(R.id.EditTextApellido);
@@ -47,6 +47,7 @@ public class MyActivity extends Activity implements View.OnClickListener {
         clave = (TextView) findViewById(R.id.editTextClave);
         profesor=(CheckBox) findViewById(R.id.checkBox2);
         alumno=(CheckBox) findViewById(R.id.checkBox);
+        clave1 = (TextView) findViewById(R.id.editTextClave1);
         boto = (Button) findViewById(R.id.ButtonEnviar);
         boto.setOnClickListener(this);
         DatosPorDefecto1();
@@ -83,10 +84,12 @@ public class MyActivity extends Activity implements View.OnClickListener {
             String cuarto =celular.getText().toString();
             String quinto =comuna.getSelectedItem().toString();
             String sexto =clave.getText().toString();
+            String clave2 =clave1.getText().toString();
             String uno ="1";
             String cero ="0";
             globalVariable.setContrasena(sexto);
             globalVariable.setNombre(primero);
+            if(clave2.equals(sexto)){
             if(profesor.isChecked()==true){if(alumno.isChecked()==true){
             manager = new DataBaseManager(this);
             manager.insertar2(primero,segundo,tercero,cuarto,quinto,uno,uno,sexto);
@@ -99,6 +102,8 @@ public class MyActivity extends Activity implements View.OnClickListener {
                 manager.insertar2(primero,segundo,tercero,cuarto,quinto,cero,uno,sexto);}
             Intent a = new Intent(this, Menus.class);
             startActivity(a);}
+            else{ Toast toast = Toast.makeText(this, "Las contraseñas no coinciden", Toast.LENGTH_LONG);
+                toast.show();}}
         if (view.getId() == R.id.ButtonResetear) {
 
             nombre.setText("");

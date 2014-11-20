@@ -53,11 +53,11 @@ public class asignatura extends Activity implements View.OnClickListener {
             }
             Intent i=new Intent(this,Menus.class) ;
             startActivity(i);
-                Toast toast = Toast.makeText(this, "Contraseña correcta", Toast.LENGTH_LONG);
+                Toast toast = Toast.makeText(this, "Cambio exitoso", Toast.LENGTH_LONG);
                 toast.show();}
 
         else{
-            Toast toast = Toast.makeText(this, "Contraseña incorrecta", Toast.LENGTH_LONG);
+            Toast toast = Toast.makeText(this, "Cambio no exitoso", Toast.LENGTH_LONG);
             toast.show();}
             }}
 
