@@ -37,7 +37,7 @@ public class precio extends Activity implements View.OnClickListener{
                 manager.modificarprecio(globalVariable.getContrasena(),nombre.getText().toString());
                 Intent i=new Intent(this,Menus.class) ;
                 startActivity(i);
-                Toast toast = Toast.makeText(this, "Contraseña correcta", Toast.LENGTH_LONG);
+                Toast toast = Toast.makeText(this, "Cambio exitoso", Toast.LENGTH_LONG);
                 toast.show();
 
 

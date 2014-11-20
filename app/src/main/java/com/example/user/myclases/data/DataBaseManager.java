@@ -174,7 +174,7 @@ public class DataBaseManager {
     }
     public Cursor contraseña1(String contraseña) {
         Cursor mCursor =
-                db.rawQuery("select nombre,apellido from usuarios WHERE clave= '" + contraseña + "';", null);
+                db.rawQuery("select mail,apellido from usuarios WHERE clave= '" + contraseña + "';", null);
         if (mCursor != null) {
             mCursor.moveToFirst();
         }
