@@ -1,7 +1,6 @@
 package com.example.user.myclases;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.view.Menu;
@@ -19,28 +18,25 @@ public class Perfilprofesor extends Activity {
     String passedVar=null;
     private TextView passedView=null;
     private DataBaseManager manager;
+    private String hola;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_perfilprofesor);
 
-        Intent i= getIntent();
 
-        Bundle b = i.getExtras();
+        Bundle bundle=getIntent().getExtras();
+        hola = bundle.getString("yeah");
+        manager = new DataBaseManager(this);
 
-        String j = (String) b.get("yeah");
 
 
-        //passedView=(TextView) findViewById(R.id.textView5);
-
-        //passedView.setText("You clicked item="+passedVar);
-
-        //cursor = manager.InfoProfe(j);
+        //cursor = manager.InfoProfe(hola);
         //lista = (ListView) findViewById(R.id.listView1);
 
         //ProfePerfilAdapter cursorAdapter = new ProfePerfilAdapter(getApplicationContext(),cursor,0);
-        // lista.setAdapter(cursorAdapter);
+        //lista.setAdapter(cursorAdapter);
     }
 
 

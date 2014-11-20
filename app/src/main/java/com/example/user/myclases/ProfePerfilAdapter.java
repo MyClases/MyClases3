@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CursorAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.user.myclases.data.DataBaseManager;
@@ -33,12 +34,14 @@ public class ProfePerfilAdapter extends CursorAdapter {
     public void bindView(View view, Context context, Cursor cursor) {
         TextView NombreView = (TextView) view.findViewById(R.id.textView);
         TextView ApellidoView = (TextView) view.findViewById(R.id.textView2);
+        ImageView ViewImage = (ImageView) view.findViewById(R.id.imageView);
 
         String Nombre = cursor.getString(cursor.getColumnIndex(manager.CN_NAME));
         String Apellido = cursor.getString(cursor.getColumnIndex(manager.CN_APELLIDO));
 
         NombreView.setText(Nombre);
         ApellidoView.setText(Apellido);
+        ViewImage.setImageResource(R.drawable.avatar);
 
     }
 }

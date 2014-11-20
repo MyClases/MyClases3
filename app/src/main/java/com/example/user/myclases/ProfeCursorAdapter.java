@@ -46,10 +46,9 @@ public class ProfeCursorAdapter extends CursorAdapter{
 
         //TODO  colocar datos del cursor en los campos del layout
 
-        ViewNombre.setText("Nombre: "+Nombre);//+"                        "+
-        //"Apellido: "+Apellido);
+        ViewNombre.setText("Nombre: "+Nombre);
 
-        ViewImage.setImageResource(R.drawable.chitz);
+        ViewImage.setImageResource(R.drawable.avatar);
 
     }
 }
