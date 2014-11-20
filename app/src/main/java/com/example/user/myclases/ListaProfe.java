@@ -1,11 +1,15 @@
 package com.example.user.myclases;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
+import android.widget.TextView;
 
 import com.example.user.myclases.data.DataBaseManager;
 
@@ -17,7 +21,9 @@ public class ListaProfe extends Activity {
     private ListView lista;
     private SimpleCursorAdapter adapter;
     private String a,p,c;
+    private TextView gonzalo;
 
+    public final static String ID_EXTRA="com.example.user.myclases._ID";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,14 +46,29 @@ public class ListaProfe extends Activity {
 
         //TODO implementar ProfeCursorAdapter
 
-        //ProfeCursorAdapter cursorAdapter = new ProfeCursorAdapter(getApplicationContext(),cursor,0);
-        //lista.setAdapter(cursorAdapter);
+        ProfeCursorAdapter cursorAdapter = new ProfeCursorAdapter(getApplicationContext(),cursor,0);
+        lista.setAdapter(cursorAdapter);
+        lista.setOnItemClickListener(onListClick);
 
-        lista.setAdapter(adapter);
+        //lista.setAdapter(adapter);
 
 
     
 }
+
+    private AdapterView.OnItemClickListener onListClick=new AdapterView.OnItemClickListener() {
+        public void onItemClick(AdapterView<?> parent,
+                                View view, int position,
+                                long id)
+        {
+            gonzalo=(TextView) findViewById(R.id.textView3);
+            Intent i=new Intent (ListaProfe.this,Perfilprofesor.class);
+
+            i.putExtra("yeah", gonzalo.getText().toString());
+            startActivity(i);
+
+        }
+    };
 
 
     @Override

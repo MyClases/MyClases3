@@ -64,5 +64,7 @@
     <string name="title_activity_precio">precio</string>
     <string name="title_activity_lista_alumno">ListaAlumno</string>
     <string name="Salir">Salir</string>
+    <string name="Nome">Large Text</string>
+    <string name="Apelido">Large Text</string>
 
 </resources>

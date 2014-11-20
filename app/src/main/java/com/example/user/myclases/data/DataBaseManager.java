@@ -180,9 +180,22 @@ public class DataBaseManager {
         }
         return mCursor;
     }
+
+
     public Cursor cargarCursorContactos2() {
         String[] columnas = new String[]{CN_ID, CN_NAME,CN_APELLIDO};
         return db.query(TABLE_NAME, columnas, CN_ALUMNO+"=1", null, null, null, null);
+    }
+
+    public Cursor InfoProfe(String nombre){
+        Cursor elcursor =
+                db.rawQuery("select nombre,apellido from usuarios WHERE nombre ='"+ nombre +"';",null);
+        if (elcursor != null){
+            elcursor.moveToFirst();
+
+        }
+        return elcursor;
+
     }
 
 }

@@ -1,17 +1,46 @@
 package com.example.user.myclases;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ListView;
+import android.widget.TextView;
+
+import com.example.user.myclases.data.DataBaseManager;
 
 
 public class Perfilprofesor extends Activity {
+
+    private ListView lista;
+    private Cursor cursor;
+    String passedVar=null;
+    private TextView passedView=null;
+    private DataBaseManager manager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_perfilprofesor);
+
+        Intent i= getIntent();
+
+        Bundle b = i.getExtras();
+
+        String j = (String) b.get("yeah");
+
+
+        //passedView=(TextView) findViewById(R.id.textView5);
+
+        //passedView.setText("You clicked item="+passedVar);
+
+        //cursor = manager.InfoProfe(j);
+        //lista = (ListView) findViewById(R.id.listView1);
+
+        //ProfePerfilAdapter cursorAdapter = new ProfePerfilAdapter(getApplicationContext(),cursor,0);
+        // lista.setAdapter(cursorAdapter);
     }
 
 
