@@ -77,6 +77,10 @@
             android:name=".ListaAlumno"
             android:label="@string/title_activity_lista_alumno" >
         </activity>
+        <activity
+            android:name=".Contenido"
+            android:label="Contenido" >
+        </activity>
     </application>
 
     <!-- To auto-complete the email text field in the login form with the user's emails -->
