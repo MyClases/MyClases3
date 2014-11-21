@@ -11,7 +11,8 @@
     android:clickable="true"
     style="@android:style/TextAppearance.Widget.TextView"
     android:focusable="true"
-    android:background="@drawable/linedpaper">
+    android:background="@drawable/linedpaper"
+    android:id="@+id/">
 
     <Button
         android:layout_width="wrap_content"
@@ -22,7 +23,8 @@
         android:enabled="true"
         android:focusable="true"
         android:focusableInTouchMode="true"
-        style="@android:style/TextAppearance.Widget.TextView"
+        android:textStyle="italic"
+        style="@style/fondo"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="75dp" />
@@ -38,7 +40,7 @@
         android:enabled="true"
         android:focusable="true"
         android:focusableInTouchMode="true"
-        style="@android:style/TextAppearance.Widget.TextView" />
+        style="@style/fondo" />
 
     <Button
         android:layout_width="wrap_content"
@@ -52,13 +54,16 @@
         android:enabled="true"
         android:focusable="true"
         android:focusableInTouchMode="true"
-        style="@android:style/TextAppearance.Widget.TextView" />
+        android:textStyle="italic"
+        style="@style/fondo"
+
+        />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/Notificaciones"
-        android:id="@+id/contraseña"
+        android:id="@+id/notificaciones1"
         android:layout_below="@+id/Clasesbutton"
         android:layout_alignLeft="@+id/Clasesbutton"
         android:layout_alignStart="@+id/Clasesbutton"
@@ -66,7 +71,7 @@
         android:enabled="true"
         android:focusable="true"
         android:focusableInTouchMode="true"
-        style="@android:style/TextAppearance.Widget.TextView" />
+        style="@style/fondo" />
 
     <Button
         android:layout_width="wrap_content"
@@ -79,10 +84,10 @@
         android:focusableInTouchMode="true"
         style="@android:style/TextAppearance.Widget.TextView"
         android:layout_marginTop="10dp"
-        android:layout_below="@+id/contraseña"
+        android:layout_below="@id/notificaciones1"
         android:layout_centerHorizontal="true"
-        android:layout_alignLeft="@+id/contraseña"
-        android:layout_alignStart="@+id/contraseña"
+        android:layout_alignLeft="@id/notificaciones1"
+        android:layout_alignStart="@id/notificaciones1"
         />
 
 </RelativeLayout>
