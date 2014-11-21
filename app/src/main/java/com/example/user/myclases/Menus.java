@@ -36,7 +36,7 @@ public class Menus extends Activity {
                 Intent intent = new Intent(Menus.this,
                         Agendatuclase.class);
                 startActivity(intent);}});
-        Button Regist = (Button) findViewById(R.id.notificaciones1);
+        Button Regist = (Button) findViewById(R.id.contraseña);
         Regist.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
