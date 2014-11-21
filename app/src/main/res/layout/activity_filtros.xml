@@ -248,7 +248,8 @@
             android:layout_height="wrap_content"
             android:text="Encontrar"
             android:id="@+id/filtrarbt"
-            android:layout_column="5" />
+            android:layout_column="5"
+            style="@style/fondo"/>
     </TableRow>
 
 </TableLayout>

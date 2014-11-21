@@ -175,14 +175,16 @@
         android:layout_height="wrap_content"
         android:layout_row="11"
         android:layout_column="4"
-        android:text="@string/Enviar" />
+        android:text="@string/Enviar"
+        style="@style/fondo"/>
 
      <Button android:id="@+id/ButtonResetear"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_row="12"
             android:layout_column="4"
-            android:text="@string/Resetear" />
+            android:text="@string/Resetear"
+            style="@style/fondo"/>
 
     </GridLayout>
 

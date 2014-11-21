@@ -46,6 +46,7 @@
         android:text="Volver al menú"
         android:layout_below="@+id/precio"
         android:id="@+id/buttonmenu"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        style="@style/fondo"/>
 
 </RelativeLayout>
