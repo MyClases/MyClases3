@@ -23,6 +23,16 @@ public class MyPerfil extends Activity {
                 Intent intent = new Intent(MyPerfil.this,
                         asignatura.class);
                 startActivity(intent);}});
+
+        Button Cambiarcalidad = (Button) findViewById(R.id.cambiarcalidad);
+
+        Cambiarcalidad.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MyPerfil.this,
+                        calidadusuarios.class);
+                startActivity(intent);}});
+
         Button Registra = (Button) findViewById(R.id.Precio);
 
         Registra.setOnClickListener(new View.OnClickListener() {

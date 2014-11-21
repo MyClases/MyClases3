@@ -67,5 +67,9 @@
     <string name="Nome">Large Text</string>
     <string name="Apelido">Large Text</string>
     <string name="Clave1">Reingresar clave</string>
+    <string name="quequieresser">¿Quieres ser Profesor o Alumno?</string>
+    <string name="serprofe">Profesor</string>
+    <string name="seralumno">Alumno</string>
+    <string name="title_activity_calidadusuarios">calidadusuarios</string>
 
 </resources>

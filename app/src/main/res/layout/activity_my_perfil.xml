@@ -24,7 +24,7 @@
         android:layout_width="fill_parent"
         android:layout_height="80dp"
         android:text="@string/Declarar_Horario"
-        android:id="@+id/Buscarbutton"
+        android:id="@+id/cambiarcalidad"
         android:layout_below="@+id/textView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
@@ -35,7 +35,7 @@
         android:layout_height="80dp"
         android:text="@string/Declarar_Materia"
         android:id="@+id/contraseña"
-        android:layout_below="@+id/Buscarbutton"
+        android:layout_below="@+id/cambiarcalidad"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 

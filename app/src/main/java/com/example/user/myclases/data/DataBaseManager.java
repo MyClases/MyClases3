@@ -81,15 +81,25 @@ public class DataBaseManager {
         /*bd.update(TABLA, ContentValues, Clausula Where, Argumentos Where)*/
         db.update(TABLE_NAME, valores, CN_CLAVE + "= '"+clave+"'",null);
     }
+    public void modificarprofesor(String clave,String modificacion) {
+        if(modificacion.equals("1")){
+            ContentValues valores = new ContentValues();
+            valores.put(CN_PROFESOR, "1");
+            db.update(TABLE_NAME, valores, CN_CLAVE + "='"+clave+"'",null);}
+        else{
+            ContentValues valores = new ContentValues();
+            valores.put(CN_PROFESOR, "0");
+            db.update(TABLE_NAME, valores, CN_CLAVE + "='"+clave+"'",null);}
+    }
     public void modificaralumno(String clave,String modificacion) {
         if(modificacion.equals("1")){
-        ContentValues valores = new ContentValues();
-        valores.put(CN_ALUMNO, "1");
-        db.update(TABLE_NAME, valores, CN_CLAVE + "='"+clave+"'",null);}
+            ContentValues valores = new ContentValues();
+            valores.put(CN_ALUMNO, "1");
+            db.update(TABLE_NAME, valores, CN_CLAVE + "='"+clave+"'",null);}
         else{
-        ContentValues valores = new ContentValues();
-        valores.put(CN_ALUMNO, "1");
-        db.update(TABLE_NAME, valores, CN_CLAVE + "='"+clave+"'",null);}
+            ContentValues valores = new ContentValues();
+            valores.put(CN_ALUMNO, "0");
+            db.update(TABLE_NAME, valores, CN_CLAVE + "='"+clave+"'",null);}
     }
     public void modificaringles(String clave) {
         ContentValues valores = new ContentValues();
@@ -118,19 +128,19 @@ public class DataBaseManager {
     public Cursor cargarCursorContactos(String asignatura, String comuna, String
             precio) {
         if(CN_MATEMATICAS.equals(asignatura)){
-           if(precio.isEmpty()){
-               if(comuna.isEmpty()){
-                   return db.rawQuery("SELECT _id,nombre,apellido FROM usuarios WHERE matematicas = 1 AND profesor = 1", null);
-               }
-           return db.rawQuery("SELECT _id,nombre,apellido FROM usuarios WHERE matematicas = 1 AND profesor = 1 and comuna= '"+comuna+"'",null);
-           }
-           if(comuna.isEmpty()){
-               return db.rawQuery("SELECT _id,nombre,apellido FROM usuarios WHERE matematicas = 1 AND profesor = 1 and precio<= '"+precio+"'",null);
-           }
+            if(precio.isEmpty()){
+                if(comuna.isEmpty()){
+                    return db.rawQuery("SELECT _id,nombre,apellido FROM usuarios WHERE matematicas = 1 AND profesor = 1", null);
+                }
+                return db.rawQuery("SELECT _id,nombre,apellido FROM usuarios WHERE matematicas = 1 AND profesor = 1 and comuna= '"+comuna+"'",null);
+            }
+            if(comuna.isEmpty()){
+                return db.rawQuery("SELECT _id,nombre,apellido FROM usuarios WHERE matematicas = 1 AND profesor = 1 and precio<= '"+precio+"'",null);
+            }
             return db.rawQuery("SELECT _id,nombre,apellido FROM usuarios WHERE matematicas = 1 AND profesor = 1 and comuna= '"+comuna+"' and precio <= '"+precio+"'",null);
 
 
-    }
+        }
         if(CN_FISICA.equals(asignatura)){
             if(precio.isEmpty()){
                 if(comuna.isEmpty()){
@@ -162,10 +172,10 @@ public class DataBaseManager {
         if(asignatura.isEmpty()){
             if(precio.isEmpty()){
                 if(comuna.isEmpty()){
-                return db.rawQuery("SELECT _id,nombre,apellido FROM usuarios WHERE profesor = 1", null);
+                    return db.rawQuery("SELECT _id,nombre,apellido FROM usuarios WHERE profesor = 1", null);
                 }
                 return db.rawQuery("SELECT _id,nombre,apellido FROM usuarios WHERE profesor = 1 AND comuna= '"+comuna+"'", null);
-             }
+            }
 
             if (comuna.isEmpty()){
                 return db.rawQuery("SELECT _id,nombre,apellido FROM usuarios WHERE profesor = 1 AND precio <= '"+precio+"'", null);
@@ -174,7 +184,7 @@ public class DataBaseManager {
 
 
         return null;
-        }
+    }
 
     public Cursor contraseña(String contraseña){
         String[] columnas = new String[]{CN_NAME};

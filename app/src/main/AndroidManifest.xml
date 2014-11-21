@@ -3,11 +3,11 @@
     package="com.example.user.myclases" >
 
     <application
+        android:name=".data.MyProfe"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme"
-        android:name=".data.MyProfe">
+        android:theme="@style/AppTheme" >
         <activity
             android:name=".LoginActivity"
             android:label="@string/app_name" >
@@ -80,6 +80,10 @@
         <activity
             android:name=".Contenido"
             android:label="Contenido" >
+        </activity>
+        <activity
+            android:name=".calidadusuarios"
+            android:label="@string/title_activity_calidadusuarios" >
         </activity>
     </application>
 
