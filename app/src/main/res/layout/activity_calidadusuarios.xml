@@ -15,6 +15,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/quequieresser"
         android:id="@+id/textView"
@@ -45,9 +46,9 @@
         android:layout_height="wrap_content"
         android:text="Volver al Menú"
         android:id="@+id/volver2"
+        android:layout_marginTop="71dp"
+        style="bold"
         android:layout_below="@+id/seralumno"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp"
-        style="@style/fondo"/>
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

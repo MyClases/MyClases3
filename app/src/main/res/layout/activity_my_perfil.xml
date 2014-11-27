@@ -21,33 +21,32 @@
         android:layout_marginTop="42dp" />
 
     <Button
-        android:layout_width="fill_parent"
-        android:layout_height="80dp"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
         android:text="@string/Declarar_Horario"
         android:id="@+id/cambiarcalidad"
-        android:layout_below="@+id/textView"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="58dp"
-        style="@style/fondo"/>
+        style="bold"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_above="@+id/contraseña"
+        android:layout_alignLeft="@+id/contraseña"
+        android:layout_alignStart="@+id/contraseña" />
 
     <Button
-        android:layout_width="fill_parent"
-        android:layout_height="80dp"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
         android:text="@string/Declarar_Materia"
         android:id="@+id/contraseña"
-        android:layout_below="@+id/cambiarcalidad"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        style="@style/fondo"/>
+        style="bold"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
 
     <Button
-        android:layout_width="fill_parent"
-        android:layout_height="80dp"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
         android:text="Fijar Precio"
         android:id="@+id/Precio"
+        style="bold"
         android:layout_below="@+id/contraseña"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        style="@style/fondo"/>
+        android:layout_alignLeft="@+id/contraseña"
+        android:layout_alignStart="@+id/contraseña" />
 </RelativeLayout>

@@ -46,20 +46,12 @@
             android:label="@string/title_activity_my_perfil" >
         </activity>
         <activity
-            android:name=".Menu"
-            android:label="@string/title_activity_menu" >
-        </activity>
-        <activity
             android:name=".Perfilprofesor"
             android:label="@string/title_activity_perfilprofesor" >
         </activity>
         <activity
             android:name=".Menus"
             android:label="@string/title_activity_menus" >
-        </activity>
-        <activity
-            android:name=".aa"
-            android:label="@string/title_activity_aa" >
         </activity>
         <activity
             android:name=".Filtros"

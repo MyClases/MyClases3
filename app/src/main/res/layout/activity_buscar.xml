@@ -23,11 +23,10 @@
             android:onClick="pasar"
             android:id="@+id/contraseña"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="65dp"
-            android:textStyle="bold"
+            android:layout_marginTop="150dp"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            style="@style/fondo"/>
+            style="bold"/>
 
         <Button
             android:layout_width="wrap_content"
@@ -40,11 +39,10 @@
             android:layout_alignLeft="@+id/contraseña"
             android:layout_alignStart="@+id/contraseña"
             android:layout_marginTop="129dp"
-            android:textStyle="bold"
             android:layout_alignRight="@+id/contraseña"
             android:layout_alignEnd="@+id/contraseña"
             android:onClick="pasar1"
-            style="@style/fondo"/>
+            style="bold"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -53,9 +51,6 @@
             android:text="@string/n2"
             android:id="@+id/textView"
             android:layout_gravity="center_horizontal"
-            android:textColor="#ff1923ff"
-            android:textColorHighlight="#ff261bff"
-            android:textStyle="bold"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true" />
 

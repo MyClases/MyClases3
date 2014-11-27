@@ -25,6 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginTop="25dp"
         android:text="@string/queclases"
         android:id="@+id/textView"
         android:layout_alignParentTop="true"
@@ -55,8 +56,9 @@
         android:layout_height="wrap_content"
         android:text="Volver al Menú"
         android:id="@+id/volver"
-        android:layout_centerHorizontal="true"
+        style="bold"
         android:layout_below="@+id/ingles"
-        style="@style/fondo"/>
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp" />
 
 </RelativeLayout>

@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:text="@string/n1"
         android:id="@+id/Buscarbutton"
-        style="@style/fondo"/>
+        style="bold"/>
 
     <CalendarView
         android:layout_width="match_parent"

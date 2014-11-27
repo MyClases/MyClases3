@@ -249,7 +249,7 @@
             android:text="Encontrar"
             android:id="@+id/filtrarbt"
             android:layout_column="5"
-            style="@style/fondo"/>
+            style="bold"/>
     </TableRow>
 
 </TableLayout>
